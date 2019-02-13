@@ -1,29 +1,33 @@
+ANIJA J
+S4 D
+7
+
 Script started on Wed 01 Jan 2003 07:45:53 AM IST
-]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ exit()mkdir jjcat first.txtls[Kcat first.txt[1Pfirst.txt>first.txt[s4db1@localhost Desktop]$ cat>f[s4db1@localhost Desktop]$ cat>fi[s4db1@localhost Desktop]$ cat>fir[s4db1@localhost Desktop]$ cat>firs[s4db1@localhost Desktop]$ cat>first[1P.txt[1P.txt[1P.txt[1P.txt[1P.txtf.txti.txtr.txts.txtt.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt1.txt
-NAme   ame 
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ cat>first.txt
+Name 
 Batch
 Roll no
 College
 
-[1]+  Stopped                 cat >1.txt
-]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ cat>1.txt[1P.txt2.txt
+[1]+  Stopped                 cat >first.txt
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ cat>second.txt
 Anija J
 S4 D
 7
 CEC
 
-[2]+  Stopped                 cat >2.txt
-]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ cat>2.txt1.txt[5Pexit()mkdir jjcat first.txtls[Kcat 01.txt>second.txt[1Pfirst.txtscript create.txtexit[Krm details.txt[7Pls -ltr[K[Kcat second.txt -n[3Pgrep 5*.txt -c[3P8?.txt*.txt[1P.txtfirst.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat 1.txt -n
+[2]+  Stopped                 cat >second.txt
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ cat first.txt -n
      1	Name 
      2	Batch
      3	Roll no
      4	College
-]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ cat 1.txt -n[1P[1@2
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ cat second.txt -n
      1	Anija J
      2	S4 D
      3	7
      4	CEC
-]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ paste 1.txt 2.x[Ktxt
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ paste first.txt second.txt
 Name 	Anija J
 Batch	S4 D
 Roll no	7
