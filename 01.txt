@@ -48,9 +48,69 @@ drwxrwxr-x 2 s4db1 s4db1 4096 Jan  1 07:44 [00;34mjj[00m
 -rw-rw-r-- 1 s4db1 s4db1    0 Jan  1 07:45 [00m01.txt[00m
 -rw-rw-r-- 1 s4db1 s4db1   28 Jan  1 07:46 [00m1.txt[00m
 -rw-rw-r-- 1 s4db1 s4db1   19 Jan  1 07:46 [00m2.txt[00m
-[m]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ exit
-exit
-There are stopped jobs.
+[m]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ grep a *.txt
+Name 
+Batch
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ grep a first.txt -n
+1:Name 
+2:Batch
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ grep a second.txt -c
+1:Anija J
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ grep a second.txt -n
+1:Anija J
+0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ ln - [Ks details.txt2details.txt.details.txttdetails.txtxdetails.txttdetails.txt details.txt
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ ls
+[00m[00m01.txt[00m  [00m1.txt[00m  [00m2.txt[00m  [00;36mdetails.txt[00m  [00msearch.txt[00m  [00mshortcut.txt[00m
+[m]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ ls -lt
+[00mtotal 44
+lrwxrwxrwx 1 s4db1 s4db1    5 Jan  1 07:55 [00;36mdetails.txt[00m -> [00m2.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1    0 Jan  1 07:54 [00mshortcut.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1 4253 Jan  1 07:53 [00msearch.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1 2879 Jan  1 07:48 [00m01.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1   19 Jan  1 07:46 [00m2.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1   28 Jan  1 07:46 [00m1.txt[00m
+[m]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ ls - [Klts[Kr
+[00mtotal 44
+-rw-rw-r-- 1 s4db1 s4db1   28 Jan  1 07:46 [00m1.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1   19 Jan  1 07:46 [00m2.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1 2879 Jan  1 07:48 [00m01.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1 4253 Jan  1 07:53 [00msearch.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1    0 Jan  1 07:54 [00mshortcut.txt[00m
+lrwxrwxrwx 1 s4db1 s4db1    5 Jan  1 07:55 [00;36mdetails.txt[00m -> [00m2.txt[00m
+[m]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ rm details.txt
+]0;
+
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ sort -n first.txt
+Batch
+College
+Name 
+Roll no
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ sort -n first.txt
+Anija J
+CEC
+S4 D
+7
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ sort -n second.txt
+7
+Anija J
+CEC
+S4 D
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ sort -nk7 second.txt
+S4 D
+CEC
+Anija J
+7
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ sort -rnk7 second.txt
+Roll no
+Name 
+College
+Batch
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ sort -rnk7 first.txt
+[s4db1@localhost Desktop]$ sort -rnk7 
+Batch
+College
+Name 
+Roll no
 ]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ exit
 
-Script done on Wed 01 Jan 2003 07:48:27 AM IST
+Script done on Wed 01 Jan 2003 07:57:33 AM IST
