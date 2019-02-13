@@ -1,0 +1,52 @@
+Script started on Wed 01 Jan 2003 07:45:53 AM IST
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ exit()mkdir jjcat first.txtls[Kcat first.txt[1Pfirst.txt>first.txt[s4db1@localhost Desktop]$ cat>f[s4db1@localhost Desktop]$ cat>fi[s4db1@localhost Desktop]$ cat>fir[s4db1@localhost Desktop]$ cat>firs[s4db1@localhost Desktop]$ cat>first[1P.txt[1P.txt[1P.txt[1P.txt[1P.txtf.txti.txtr.txts.txtt.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt1.txt
+NAme   ame 
+Batch
+Roll no
+College
+
+[1]+  Stopped                 cat >1.txt
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ cat>1.txt[1P.txt2.txt
+Anija J
+S4 D
+7
+CEC
+
+[2]+  Stopped                 cat >2.txt
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ cat>2.txt1.txt[5Pexit()mkdir jjcat first.txtls[Kcat 01.txt>second.txt[1Pfirst.txtscript create.txtexit[Krm details.txt[7Pls -ltr[K[Kcat second.txt -n[3Pgrep 5*.txt -c[3P8?.txt*.txt[1P.txtfirst.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat 1.txt -n
+     1	Name 
+     2	Batch
+     3	Roll no
+     4	College
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ cat 1.txt -n[1P[1@2
+     1	Anija J
+     2	S4 D
+     3	7
+     4	CEC
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ paste 1.txt 2.x[Ktxt
+Name 	Anija J
+Batch	S4 D
+Roll no	7
+College	CEC
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ ls
+[00m[00m01.txt[00m  [00m1.txt[00m  [00m2.txt[00m  [00mcreate.txt[00m  [00mfirst.txt[00m  [00;34mjj[00m  [00msecond.txt[00m
+[m]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ ls -[K[K[K[Kls
+[00m[00m01.txt[00m  [00m1.txt[00m  [00m2.txt[00m  [00;34mjj[00m
+[m]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ ls -lt
+[00mtotal 28
+-rw-rw-r-- 1 s4db1 s4db1   19 Jan  1 07:46 [00m2.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1   28 Jan  1 07:46 [00m1.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1    0 Jan  1 07:45 [00m01.txt[00m
+drwxrwxr-x 2 s4db1 s4db1 4096 Jan  1 07:44 [00;34mjj[00m
+[m]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ ls -ltr
+[00mtotal 28
+drwxrwxr-x 2 s4db1 s4db1 4096 Jan  1 07:44 [00;34mjj[00m
+-rw-rw-r-- 1 s4db1 s4db1    0 Jan  1 07:45 [00m01.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1   28 Jan  1 07:46 [00m1.txt[00m
+-rw-rw-r-- 1 s4db1 s4db1   19 Jan  1 07:46 [00m2.txt[00m
+[m]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ exit
+exit
+There are stopped jobs.
+]0;s4db1@localhost:~/Desktop[s4db1@localhost Desktop]$ exit
+
+Script done on Wed 01 Jan 2003 07:48:27 AM IST
