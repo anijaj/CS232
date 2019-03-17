@@ -1,5 +1,8 @@
 ANIJA J
-CSD 07
+S4 D
+7
+
+
 Script started on Wed 01 Jan 2003 02:18:05 AM IST
 ]0;s4db2@localhost:~[s4db2@localhost ~]$ ssh cs17d@[K16@1920[K.168.0.30
 .
