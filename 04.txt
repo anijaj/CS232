@@ -1,5 +1,8 @@
 ANIJA J
-CSD 07
+S4 D
+7
+
+
 Script started on Wed 01 Jan 2003 02:52:24 AM IST
 ]0;s4db2@localhost:~[s4db2@localhost ~]$ exitscript transferingclear[Kssh cs17d16@192.168.0.30
 
