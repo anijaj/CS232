@@ -1,5 +1,8 @@
 ANIJA J
-CSD 07
+S4 D
+7
+
+
 Script started on 2019-02-17 12:31:10+00:00
 ]0;kazihar@DESKTOP-66TLBAL: ~[01;32mkazihar@DESKTOP-66TLBAL[00m:[01;34m~[00m$ ls
 result_CHN.pdf  s4d.txt  task#1
