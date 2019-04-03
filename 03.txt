@@ -4,7 +4,7 @@ Roll no 07
 
 
 Script started on Wed 01 Jan 2003 02:18:05 AM IST
-]0;s4db2@localhost:~[s4db2@localhost ~]$ ssh cs17d@[K16@1920[K.168.0.30
+]0;s4db2@localhost:~[s4db2@localhost ~]$ ssh cs17d07@[K16@1920[K.168.0.30
 .
               |
 .  .    . .-. | .-..-. .--.--. .-.
@@ -32,7 +32,7 @@ examples.desktop  sort.txt  test.txt  yi.txt
 $ exit
 Connection to 192.168.0.30 closed.
 
-]0;s4db2@localhost:~[s4db2@localhost ~]$ sftp cs17d16@192.168.0.30
+]0;s4db2@localhost:~[s4db2@localhost ~]$ sftp cs17d07@192.168.0.30
 Connecting to 192.168.0.30...
 .
               |
