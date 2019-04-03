@@ -4,9 +4,9 @@ Roll no 07
 
 
 Script started on Wed 01 Jan 2003 02:52:24 AM IST
-]0;s4db2@localhost:~[s4db2@localhost ~]$ exitscript transferingclear[Kssh cs17d16@192.168.0.30
+]0;s4db2@localhost:~[s4db2@localhost ~]$ exitscript transferingclear[Kssh cs17d07@192.168.0.30
 
-[s4db2@localhost ~]$ clear[Kscript transferingexit[K[Krsync -avz ceccsd16.2 cs17d07@192.168.0.30:/home/cs17d16
+[s4db2@localhost ~]$ clear[Kscript transferingexit[K[Krsync -avz ceccsd07.2 cs17d07@192.168.0.30:/home/cs17d16
 .
               |
 .  .    . .-. | .-..-. .--.--. .-.
@@ -17,7 +17,7 @@ building file list ... done
 
 sent 77 bytes  received 20 bytes  17.64 bytes/sec
 total size is 4089  speedup is 42.15
-]0;s4db2@localhost:~[s4db2@localhost ~]$ ssh cs17d16@192.168.0.30
+]0;s4db2@localhost:~[s4db2@localhost ~]$ ssh cs17d07@192.168.0.30
 .
               |
 .  .    . .-. | .-..-. .--.--. .-.
