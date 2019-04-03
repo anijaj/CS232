@@ -32,7 +32,8 @@ PING 192.168.0.16 (192.168.0.16) 56(84) bytes of data.
 [1]+  Stopped                 ping 192.168.0.16
 ]0;s4db1@localhost:/home/s4db1/Desktop[root@localhost Desktop]# ssh root@192.168.0.16
 root@192.168.0.16's password: 
-Last login: Mon Mar 25 11:44:30 2019 from 192.168.0.7
+Last login: Mon Mar 25 11:44:30 2019 from 192.168.0.7
+
 ]0;root@localhost:~[?1034h[root@localhost ~]# ls
 anaconda-ks.cfg  anija.txt  install.log  install.log.syslog
 ]0;root@localhost:~[root@localhost ~]# cat >anija.txt
@@ -46,7 +47,8 @@ logout
 There are stopped jobs.
 ]0;root@localhost:~[root@localhost ~]# exit
 logout
-Connection to 192.168.0.16 closed.
+Connection to 192.168.0.16 closed.
+
 ]0;s4db1@localhost:/home/s4db1/Desktop[root@localhost Desktop]# exit
 exit
 There are stopped jobs.
