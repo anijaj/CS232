@@ -1,0 +1,29 @@
+Script started on 2019-04-04 15:53:31+0530
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sftp cs17d07@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d07@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> put a.txt
+stat a.txt: No such file or directory
+
+sftp> put a.txt.txt[Kh.txte.txtl.txtl.txto.txt
+Uploading hello.txt to /home/cs17d07/hello.txt
+
+hello.txt                                                                                                                                                                   0%    0     0.0KB/s   --:-- ETA
+hello.txt                                                                                                                                                                 100%   19    15.0KB/s   00:00    
+sftp> get hello.txtt[K
+Fetching /home/cs17d07/hello.txt to hello.txt
+
+/home/cs17d07/hello.txt                                                                                                                                                     0%    0     0.0KB/s   --:-- ETA
+/home/cs17d07/hello.txt                                                                                                                                                   100%   19     8.3KB/s   00:00    
+sftp> ls
+examples.desktop  first.txt         hello.txt         
+sftp> exit
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ exit
+exit
+
+Script done on 2019-04-04 15:54:55+0530
