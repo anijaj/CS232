@@ -1,0 +1,222 @@
+Script started on 2019-04-29 10:03:43+0530
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo apt install systemd
+[sudo] password for anija: 
+123Sorry, try again.
+[sudo] password for anija: 
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+
+systemd is already the newest version (237-3ubuntu10.21).
+0 upgraded, 0 newly installed, 0 to remove and 272 not upgraded.
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo apt install nginx'[K
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+
+nginx is already the newest version (1.14.0-0ubuntu1.2).
+0 upgraded, 0 newly installed, 0 to remove and 272 not upgraded.
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo ufw app list
+Available applications:
+  CUPS
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo ufw allow 'Nginx HTDT[K[KTP'
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo ufw atatus]tatusstatus[1Ptatus[1Ptatus[1Ptatusstatus
+Status: active
+
+To                         Action      From
+--                         ------      ----
+21/tcp                     ALLOW       Anywhere                  
+Nginx HTTP                 ALLOW       Anywhere                  
+21/tcp (v6)                ALLOW       Anywhere (v6)             
+Nginx HTTP (v6)            ALLOW       Anywhere (v6)             
+
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ systemctl status nginx
+[?1h=
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)[m
+   Active: [0;1;32mactive (running)[0m since Mon 2019-04-29 09:56:46 IST; 8min ago[m
+     Docs: man:nginx(8)[m
+  Process: 3910 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)[m
+  Process: 3912 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+  Process: 3911 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+ Main PID: 3913 (nginx)[m
+    Tasks: 9 (limit: 4915)[m
+   CGroup: /system.slice/nginx.service[m
+           ├─3913 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;[m
+           ├─3914 nginx: worker process[m
+           ├─3915 nginx: worker process[m
+           ├─3916 nginx: worker process[m
+           ├─3917 nginx: worker process[m
+           ├─3918 nginx: worker process[m
+           ├─3919 nginx: worker process[m
+           ├─3920 nginx: worker process[m
+           └─3921 nginx: worker process[m
+[m
+Apr 29 09:56:46 anija-HP-Laptop-15-bs1xx systemd[1]: Starting A high performance web server and a reverse proxy server...[m
+Apr 29 09:56:46 anija-HP-Laptop-15-bs1xx systemd[1]: Started A high performance web server and a reverse proxy server.[m
+
+[K[?1l>]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo mkdir -p /var/www/anija.com/html
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo chmod 775 /var/www/aniija.com/html
+chmod: cannot access '/var/www/aniija.com/html': No such file or directory
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo chmod 775 /var/www/aniija.com/html[2Pmkdir -p /var/www/anija.com/html[15Pystemctl status nginxudo mkdir -p /var/www/anija.com/html
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo mkdir -p /var/www/anija.com/htmlchmod 775 /var/www/aniija.com/html
+chmod: cannot access '/var/www/aniija.com/html': No such file or directory
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo chmod 775 /var/www/aniija.com/html[1Pja.com/html
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ gedit /var/www.[K/exampl[K[K[K[K[K[Kanija.com/html/index.html
+
+(gedit:4129): Gtk-[1;33mWARNING[0m **: [34m10:08:11.261[0m: Attempting to read the recently used resources file at '/home/anija/.local/share/recently-used.xbel', but the parser failed: Failed to open file “/home/anija/.local/share/recently-used.xbel”: Permission denied.
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ gedit /var/www/anija.com/html/index.html[Kgedit /var/www/anija.com/html/index.html[1@s[1@u[1@d[1@o[1@ [1P[1P[1P[1P[1P /var/www/anija.com/html/index.htmln /var/www/anija.com/html/index.htmla /var/www/anija.com/html/index.htmln /var/www/anija.com/html/index.htmlo /var/www/anija.com/html/index.html
+[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;95H(B[0;7m[ Reading File ](B[m[53;101H(B[0;7m 5 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                                        /var/www/anija.com/html/index.html                                                                                  [1;203H(B[m
+[54d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[54;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-▲(B[m Previous     (B[0;7m^B(B[m Back[54;188H(B[0;7m^◀(B[m Prev Word
+[55d(B[0;7m^X(B[m Exit[55;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Uncut Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[55;120H(B[0;7mM-6(B[m Copy Text    (B[0;7mM-W(B[m WhereIs Next (B[0;7mM-▼(B[m Next[55;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▶(B[m Next Word
+[53d[3d[39;49m[36m<html>
+[4d<title>[39m(B[mWELCOME![36m</title>
+[5d<head>[39m(B[mHey there![36m</head>
+[6d<body>[39m(B[mI'm Anija J from S4 D.[36m</body>
+[7d</html>
+[3d[39m(B[m[?12l[?25h[?25l[1;203H[53;94H(B[0;7m[ Wrote[53;111H(B[m
+[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[1;195H(B[0;7mModified(B[m[6;7H[36m<I'm Anija J from S4 D.</body>[8G[39m(B[m[?12l[?25h[?25l[36mhI'm Anija J from S4 D.</body>[6;9H[39m(B[m[?12l[?25h[?25l[6;38H[?12l[?25h[?25l>[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l
+[53d[K[6;26H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[36m1I'm Anija J from S4 D.</body>[6;10H[39m(B[m[?12l[?25h[?25l[36m>[39m(B[mI'm Anija J from S4 D.[36m</body>[6;11H[39m(B[m[?12l[?25h[?25lI[?12l[?25h[?25l'[?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25lA[?12l[?25h[?25ln[?12l[?25h[?25li[?12l[?25h[?25lj[?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25lJ[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25lS[?12l[?25h[?25l4[?12l[?25h[?25l [?12l[?25h[?25lD[?12l[?25h[?25l.[?12l[?25h[?25l<[36m</body>[34G[39m(B[m[?12l[?25h[?25l[36m</</body>[35G[39m(B[m[?12l[?25h[?25l[36mh</body>[36G[39m(B[m[?12l[?25h[?25l[36m1</body>[37G[39m(B[m[?12l[?25h[?25l[36m></body>[38G[39m(B[m[?12l[?25h[?25l
+[53d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                                                                               [54;1H Y(B[m Yes[K
+[55d(B[0;7m N(B[m No  [55;17H(B[0;7m^C(B[m Cancel[K[53;63H[?12l[?25h[?25l
+[54d(B[0;7m^G(B[m Get Help[54;52H(B[0;7mM-D(B[m DOS Format[54;103H(B[0;7mM-A(B[m Append[54;154H(B[0;7mM-B(B[m Backup File
+[55d(B[0;7m^C(B[m Cancel[17G         [55;52H(B[0;7mM-M(B[m Mac Format[55;103H(B[0;7mM-P(B[m Prepend[55;154H(B[0;7m^T(B[m To Files
+[53d(B[0;7mFile Name to Write: /var/www/anija.com/html/index.html       
+(B[m[53;55H[?12l[?25h[?25l
+[K[1;203H[1;195H(B[0;7m        (B[m[53;94H(B[0;7m[ Wrote 5 lines ](B[m
+[J[55;204H[?12l[?25h[55;1H[?1049l[23;0;0t
+[?1l>]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo nano /var/www/anija.com/html/index.html
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pgedit[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Psudo chmod 775 /var/www/anija.com/htmlija.com/html[2Pmkdir -p /var/www/anija.com/htmlchmod 775 /var/www/aniija.com/html[1Pja.com/htmlgedit /var/www/anija.com/html/index.html[4@sudo nano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo systemctl restart nginx
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo systemctl restart nginxnano /var/www/anija.com/html/index.html
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pgedit[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Psudo chmod 775 /var/www/anija.com/htmlija.com/html[2Pmkdir -p /var/www/anija.com/htmlchmod 775 /var/www/aniija.com/html[2Pmkdir -p /var/www/anija.com/html[15Pystemctl status nginx[7Pudo ufw statusystemctl status nginx
+[?1h=
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)[m
+   Active: [0;1;32mactive (running)[0m since Mon 2019-04-29 10:10:26 IST; 9s ago[m
+     Docs: man:nginx(8)[m
+  Process: 4157 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)[m
+  Process: 4159 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+  Process: 4158 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+ Main PID: 4160 (nginx)[m
+    Tasks: 9 (limit: 4915)[m
+   CGroup: /system.slice/nginx.service[m
+           ├─4160 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;[m
+           ├─4161 nginx: worker process[m
+           ├─4162 nginx: worker process[m
+           ├─4163 nginx: worker process[m
+           ├─4164 nginx: worker process[m
+           ├─4165 nginx: worker process[m
+           ├─4166 nginx: worker process[m
+           ├─4167 nginx: worker process[m
+           └─4168 nginx: worker process[m
+[m
+Apr 29 10:10:26 anija-HP-Laptop-15-bs1xx systemd[1]: Starting A high performance web server and a reverse proxy server...[m
+Apr 29 10:10:26 anija-HP-Laptop-15-bs1xx systemd[1]: Started A high performance web server and a reverse proxy server.[m
+
+[K[?1l>]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo [K[K[Kdo nano /etc/nginx/sits-available/anija.com
+[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;75H(B[0;7m[ Directory '/etc/nginx/sits-available' does not exist ](B[m[H(B[0;7m  GNU nano 2.9.3                                                                       /etc/nginx/sits-available/anija.com                                                                                  [1;203H(B[m
+[54d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[54;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-▲(B[m Previous     (B[0;7m^B(B[m Back[54;188H(B[0;7m^◀(B[m Prev Word
+[55d(B[0;7m^X(B[m Exit[55;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Uncut Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[55;120H(B[0;7mM-6(B[m Copy Text    (B[0;7mM-W(B[m WhereIs Next (B[0;7mM-▼(B[m Next[55;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▶(B[m Next Word
+[53d[3d[39;49m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[55;1H[?12l[?25h[?1049l[23;0;0t
+[?1l>Use "fg" to return to nano.
+
+[1]+  Stopped                 sudo nano /etc/nginx/sits-available/anija.com
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo nano /etc/nginx/sits-available/anija.com[23Pystemctl status nginx[6@udo systemctl restart[C[C[C[C[C[Cnano /var/www/anija.com/html/index.html
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pgedit[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Psudo chmod 775 /var/www/anija.com/htmlgedit /var/www/anija.com/html/index.html[4@sudo nano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Psystemctl restart nginx[6Pystemctl status[C[C[C[C[C[Cudo nano /etc/nginx/sits-available/anija.com
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo nano /etc/nginx/sits-available/anija.com
+[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;75H(B[0;7m[ Directory '/etc/nginx/sits-available' does not exist ](B[m[H(B[0;7m  GNU nano 2.9.3                                                                       /etc/nginx/sits-available/anija.com                                                                                  [1;203H(B[m
+[54d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[54;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-▲(B[m Previous     (B[0;7m^B(B[m Back[54;188H(B[0;7m^◀(B[m Prev Word
+[55d(B[0;7m^X(B[m Exit[55;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Uncut Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[55;120H(B[0;7mM-6(B[m Copy Text    (B[0;7mM-W(B[m WhereIs Next (B[0;7mM-▼(B[m Next[55;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▶(B[m Next Word
+[53d[3d[39;49m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;195H(B[0;7mModified(B[m
+[4dserver {[5dlisten 80;[6;9Hlisten [::]:80;[8;9Hroot /var/www/example.com/html;[9;9Hindex index.html index.htm index.nginx-debian.html;[11;9Hserver_name example.com www.example.com;[13;9Hlocation / {[14;17Htry_files $uri $uri/ =404;[15;9H}
+[16d}[53d[K[16d}[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l[[?12l[?25h[?25l:[?12l[?25h[?25l:[?12l[?25h[?25l][?12l[?25h[?25l:[?12l[?25h[?25l8[?12l[?25h[?25l0[?12l[?25h[?25l;[?12l[?25h[?25l
+[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l [?12l[?25h[?25l[9d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25l.[?12l[?25h[?25lh[?12l[?25h[?25lt[?12l[?25h[?25lm[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25l[A[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25la.com/html;[8;24H[?12l[?25h[?25ln.com/html;[8;25H[?12l[?25h[?25li.com/html;[8;26H[?12l[?25h[?25lj.com/html;[8;27H[?12l[?25h[?25la.com/html;[8;28H[?12l[?25h[?25l[9d[?12l[?25h[?25l
+[10d[?12l[?25h[?25l[11;28H[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25la.com www.example.com;[11;22H[?12l[?25h[?25ln.com www.example.com;[11;23H[?12l[?25h[?25li.com www.example.com;[11;24H[?12l[?25h[?25lj.com www.example.com;[11;25H[?12l[?25h[?25la.com www.example.com;[11;26H[?12l[?25h[?25l.[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25lw[?12l[?25h[?25lw[?12l[?25h[?25lw[?12l[?25h[?25l.[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l.com;[K[41G[?12l[?25h[?25l.com;[K[40G[?12l[?25h[?25l.com;[K[39G[?12l[?25h[?25l.com;[K[38G[?12l[?25h[?25l.com;[K[37G[?12l[?25h[?25l.com;[K[36G[?12l[?25h[?25l.com;[K[35G[?12l[?25h[?25la.com;[36G[?12l[?25h[?25ln.com;[37G[?12l[?25h[?25li.com;[38G[?12l[?25h[?25lj.com;[39G[?12l[?25h[?25la.com;[40G[?12l[?25h[?25l[1;203H[53;63H(B[0;7m[ Error writing /etc/nginx/sits-available/anija.com: No such file or directory ](B[m[11;40H[?12l[?25h[?25l
+[53d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                                                                               [54;1H Y(B[m Yes[K
+[55d(B[0;7m N(B[m No  [55;17H(B[0;7m^C(B[m Cancel[K[53;63H[?12l[?25h[?25l
+[J[55;204H[?12l[?25h[55;1H[?1049l[23;0;0t
+[?1l>]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo nano /etc/nginx/sits-available/anija.comes-available/anija.com
+[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;95H(B[0;7m[ Reading File ](B[m[53;94H(B[0;7m[ Read 13 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                                       /etc/nginx/sites-available/anija.com                                                                                 [1;203H(B[m
+[54d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[54;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-▲(B[m Previous     (B[0;7m^B(B[m Back[54;188H(B[0;7m^◀(B[m Prev Word
+[55d(B[0;7m^X(B[m Exit[55;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Uncut Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[55;120H(B[0;7mM-6(B[m Copy Text    (B[0;7mM-W(B[m WhereIs Next (B[0;7mM-▼(B[m Next[55;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▶(B[m Next Word
+[53d[3d[39;49m(B[mserver {[4dlisten 80;[5;9Hlisten [::]:80;[7;9Hroot /var/www/example.com/html;[8;9Hindex index.html index.htm index.nginx-debian.html;[10;9Hserver_name example.com www.example.com;[12;9Hlocation / {[13;17Htry_files $uri $uri/ =404;[14;9H}
+[15d}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l
+[53d[K[13;17H[?12l[?25h[?25lt[?12l[?25h[?25lr[?12l[?25h[?25ly[?12l[?25h[?25l_[?12l[?25h[?25lf[?12l[?25h[?25l[A[?12l[?25h[?25l
+[A[?12l[?25h[?25l[10;22H[?12l[?25h[?25lx[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l.[?12l[?25h[?25l[?12l[?25h[?25l[1;195H(B[0;7mModified(B[m[10;27H[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25la.com www.example.com;[10;22H[?12l[?25h[?25ln.com www.example.com;[10;23H[?12l[?25h[?25li.com www.example.com;[10;24H[?12l[?25h[?25lj.com www.example.com;[10;25H[?12l[?25h[?25la.com www.example.com;[10;26H[?12l[?25h[?25l.[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25lw[?12l[?25h[?25lw[?12l[?25h[?25lw[?12l[?25h[?25l.[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l.com;[K[41G[?12l[?25h[?25l.com;[K[40G[?12l[?25h[?25l.com;[K[39G[?12l[?25h[?25l.com;[K[38G[?12l[?25h[?25l.com;[K[37G[?12l[?25h[?25l.com;[K[36G[?12l[?25h[?25l.com;[K[35G[?12l[?25h[?25la.com;[36G[?12l[?25h[?25ln.com;[37G[?12l[?25h[?25li.com;[38G[?12l[?25h[?25lj.com;[39G[?12l[?25h[?25la.com;[40G[?12l[?25h[?25l
+[A[?12l[?25h[?25l[8;40H[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25la.com/html;[7;24H[?12l[?25h[?25ln.com/html;[7;25H[?12l[?25h[?25li.com/html;[7;26H[?12l[?25h[?25lj.com/html;[7;27H[?12l[?25h[?25la.com/html;[7;28H[?12l[?25h[?25l[1;203H[1;195H(B[0;7m        (B[m[53;94H(B[0;7m[ Wrote 13 lines ](B[m[7;28H[?12l[?25h[?25l
+[53d[J[55;204H[?12l[?25h[55;1H[?1049l[23;0;0t
+[?1l>]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo nano /etc/nginx/sites-available/anija.com[1Ps-available/anija.com[23Pystemctl status nginx[6@udo systemctl restart[C[C[C[C[C[C
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sudo systemctl restart nginxnano /etc/nginx/sites-available/anija.com[1Ps-available/anija.com[23Pystemctl status nginx
+[?1h=
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)[m
+   Active: [0;1;32mactive (running)[0m since Mon 2019-04-29 10:15:02 IST; 3s ago[m
+     Docs: man:nginx(8)[m
+  Process: 4245 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)[m
+  Process: 4247 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+  Process: 4246 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+ Main PID: 4249 (nginx)[m
+    Tasks: 9 (limit: 4915)[m
+   CGroup: /system.slice/nginx.service[m
+           ├─4249 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;[m
+           ├─4250 nginx: worker process[m
+           ├─4251 nginx: worker process[m
+           ├─4252 nginx: worker process[m
+           ├─4253 nginx: worker process[m
+           ├─4254 nginx: worker process[m
+           ├─4255 nginx: worker process[m
+           ├─4256 nginx: worker process[m
+           └─4257 nginx: worker process[m
+[m
+Apr 29 10:15:02 anija-HP-Laptop-15-bs1xx systemd[1]: Starting A high performance web server and a reverse proxy server...[m
+Apr 29 10:15:02 anija-HP-Laptop-15-bs1xx systemd[1]: Started A high performance web server and a reverse proxy server.[m
+
+[K[?1l>]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32m
