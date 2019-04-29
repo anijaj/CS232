@@ -1,0 +1,63 @@
+Script started on 2019-04-29 11:15:08+0530
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ sftp cs17d07@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d07@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> put tast1.txt	[K[K[Ktask1.txt
+Uploading task1.txt to /home/cs17d07/task1.txt
+
+task1.txt                                                                                                                                                                   0%    0     0.0KB/s   --:-- ETA
+task1.txt                                                                                                                                                                 100% 4271     2.7MB/s   00:00    
+sftp> ls
+examples.desktop  first.txt         hello.txt         task1.txt         
+sftp> put task8.2.txt
+Uploading task8.2.txt to /home/cs17d07/task8.2.txt
+
+task8.2.txt                                                                                                                                                                 0%    0     0.0KB/s   --:-- ETA
+task8.2.txt                                                                                                                                                               100%  822   551.0KB/s   00:00    
+sftp> put task7_ftp.txt
+Uploading task7_ftp.txt to /home/cs17d07/task7_ftp.txt
+
+task7_ftp.txt                                                                                                                                                               0%    0     0.0KB/s   --:-- ETA
+task7_ftp.txt                                                                                                                                                             100%   17KB   4.9MB/s   00:00    
+sftp> ls
+examples.desktop  first.txt         hello.txt         task1.txt         task7_ftp.txt     task8.2.txt       
+sftp> rm task8.2.tx
+Removing /home/cs17d07/task8.2.tx
+Couldn't delete file: No such file or directory
+
+sftp> rm task8.2.txt
+Removing /home/cs17d07/task8.2.txt
+sftp> ls
+examples.desktop  first.txt         hello.txt         task1.txt         task7_ftp.txt     
+sftp> put task9[K8.2_perl.txt
+Uploading task8.2_perl.txt to /home/cs17d07/task8.2_perl.txt
+
+task8.2_perl.txt                                                                                                                                                            0%    0     0.0KB/s   --:-- ETA
+task8.2_perl.txt                                                                                                                                                          100%  822   518.6KB/s   00:00    
+sftp> ex[K[Kput task3_network.txt
+Uploading task3_network.txt to /home/cs17d07/task3_network.txt
+
+task3_network.txt                                                                                                                                                           0%    0     0.0KB/s   --:-- ETA
+task3_network.txt                                                                                                                                                         100% 3059     2.0MB/s   00:00    
+sftp> ls
+examples.desktop    first.txt           hello.txt           task1.txt           task3_network.txt   task7_ftp.txt       task8.2_perl.txt    
+sftp> put task4_rsync_ssh.txt
+stat task4_rsync_ssh.txt: No such file or directory
+
+sftp> put task4_rsync_ssh.txt
+Uploading task4_rsync_ssh.txt to /home/cs17d07/task4_rsync_ssh.txt
+
+task4_rsync_ssh.txt                                                                                                                                                         0%    0     0.0KB/s   --:-- ETA
+task4_rsync_ssh.txt                                                                                                                                                       100% 1262   997.8KB/s   00:00    
+sftp> ls
+examples.desktop      first.txt             hello.txt             task1.txt             task3_network.txt     task4_rsync_ssh.txt   task7_ftp.txt         task8.2_perl.txt      
+sftp> exit
+]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ exit
+exit
+
+Script done on 2019-04-29 11:46:14+0530
