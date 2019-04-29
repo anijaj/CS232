@@ -13,7 +13,8 @@ Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
 278 packages can be updated.
 0 updates are security updates.
 
-Last login: Thu Apr  4 11:09:22 2019 from 192.168.0.192
+Last login: Thu Apr  4 11:09:22 2019 from 192.168.0.192
+
 $ scp anija@192.168.1 0.192:/home/anija/DEs  esktop/hello.txt/home/cs17d07
 usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
            [-l limit] [-o ssh_option] [-P port] [-S program]
@@ -21,7 +22,8 @@ usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
 $ ls
 examples.desktop  first.txt  hello.txt
 $ exit
-Connection to 192.168.0.30 closed.
+Connection to 192.168.0.30 closed.
+
 ]0;anija@anija-HP-Laptop-15-bs1xx: ~/Desktop[01;32manija@anija-HP-Laptop-15-bs1xx[00m:[01;34m~/Desktop[00m$ exit
 exit
 
